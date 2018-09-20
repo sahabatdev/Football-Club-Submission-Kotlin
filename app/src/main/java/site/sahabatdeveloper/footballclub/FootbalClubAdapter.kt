@@ -23,8 +23,8 @@ class FootbalClubAdapter(val context: Context, val listFootballClub: List<Model>
 
     class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
         fun bindItem(model: Model, listener: (Model) -> Unit) {
-            itemView.tvNamaClub.text = model.name
-            Glide.with(itemView.context).load(model.image).into(itemView.imgViewFootball)
+//            itemView.tvNamaClub.text = model.name
+//            Glide.with(itemView.context).load(model.image).into(itemView.imgViewFootball)
             itemView.setOnClickListener {
                 listener(model)
             }
